@@ -16,7 +16,9 @@
     "mediastream-gain": "^1.0.1",
     "mockconsole": "0.0.1",
     "rtcpeerconnection": "^5.0.0",
+    "sdp-jingle-json": "^3.0.0",
     "socket.io-client": "1.3.7",
+    "traceablepeerconnection": "^1.2.0",
     "webrtcsupport": "^2.2.0",
     "wildemitter": "^1.2.0"
   },
