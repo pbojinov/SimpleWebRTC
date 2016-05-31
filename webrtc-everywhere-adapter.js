@@ -335,9 +335,9 @@ if (navigator.mozGetUserMedia) {
       getPlugin().getUserMedia(constraints, successCallback, errorCallback);
     }
   }
-  navigator.mediaDevices = navigator.mediaDevices || {};
-  navigator.mediaDevices.getUserMedia = getUserMedia;
-  // debugger;
+
+  // navigator.mediaDevices = navigator.mediaDevices || {};
+  // navigator.mediaDevices.getUserMedia = getUserMedia;
 
   attachMediaStream = function(element, stream) {
     console.log("Attaching media stream");
@@ -483,3 +483,6 @@ if (navigator.mozGetUserMedia) {
     return getPlugin().createSessionDescription(RTCSessionDescriptionInit);
   }
 }
+
+navigator.mediaDevices = navigator.mediaDevices || {};
+navigator.mediaDevices.getUserMedia = getUserMedia;
